@@ -1,8 +1,0 @@
-uvicorn
-fastapi
-pymongo
-motor
-passlib
-python-jose
-pymongo
-pydantic
