@@ -1,7 +1,10 @@
+from dotenv import load_dotenv
+import os
 from motor.motor_asyncio import AsyncIOMotorClient
 
+load_dotenv()
 # MongoDB conncetion details
-MONGO_DETAILS = "mongodb+srv://kyalo:root@cluster0.trlij3n.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+MONGO_DETAILS = os.getenv("MONGO_DETAILS")
 
 # Establish connection to MongoDB server
 client = AsyncIOMotorClient(MONGO_DETAILS)
