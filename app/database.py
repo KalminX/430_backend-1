@@ -20,3 +20,5 @@ user_collection = database.get_collection("users")
 volunteer_collection = database.get_collection("volunteers")
 review_collection = database.get_collection("reviews")
 donation_request_collection = database.get_collection("donation_requests")
+
+db = database
